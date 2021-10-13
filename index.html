@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FCC Assignment 03 - Product Landing Page</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -14,58 +16,85 @@
     </script>
     <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js' />
     </script>
-    <nav>
-        <a href="#" class="nav-link">
-            Features
-        </a>
-        <a href="#" class="nav-link">
-            How It Works
-        </a>
-        <a href="#" class="nav-link">
-            Pricing
-        </a>
-    </nav>
-    <h1>Handcrafted, home-made masterpieces</h1>
-    <form>
-        <div class="form_email">
-            <label>
-                <input type="email" placeholder="Enter your email address">
-            </label>
+    <header id="header">
+        <img src="./images/product-landing-page-logo.png" alt="Picture of trombo with the words Original Trombone" id="header-img">
+        
+        <nav id="nav-bar">
+            <a href="#features" class="nav-link">
+                Features
+            </a>
+            <a href="#how-it-works" class="nav-link">
+                How It Works
+            </a>
+            <a href="#pricing" class="nav-link">
+                Pricing
+            </a>
+        </nav>
+    </header>
+
+        <h1>Handcrafted, home-made masterpieces</h1>
+
+    <form class="form_email" id="form" action="https://www.freecodecamp.com/email-submit">
+        <label>
+            <input      name="email" type="email" placeholder="Enter your email address" id="email">
+        </label>
+
+        <label>
+            <input type="submit" placeholder="Get started" value="Get started" class="btn" id="submit"></input>
+        </label>
+    </form>
+
+    <div class="features" id="features">
+
+        <div>
+            <i class="icon fa fa-3x fa-fire"></i>
+        </div>
+
+        <div>
+
+            <h1>
+                Premium Materials
+            </h1>
+            <!-- </div>
+        <div> -->
+
+            <p>
+                Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
+                purchase.
+            </p>
+        </div>
+
+        <div>
+            <i class="icon fa fa-3x fa-truck"></i>
         </div>
         <div>
-            <label>
-                <input type="submit" placeholder="Get started" value="Get started"></input>
-            </label>
+
+            <h1>
+                Fast Shipping
+            </h1>
+            <p>
+                We make sure you recieve your trombone as soon as we have finished making it. We also provide free
+                returns
+                if you are not satisfied.
+            </p>
         </div>
-    </form>
-    <div>
+        <div>
+            <i class="icon fa fa-3x fa-battery-full"></i>
+        </div>
+        <div>
 
-        <h1>
-            Premium Materials
-        </h1>
-        <p>
-            Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
-            purchase.
-        </p>
-
-        <h1>
-            Fast Shipping
-        </h1>
-        <p>
-            We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns
-            if you are not satisfied.
-        </p>
-
-        <h1>
-            Quality Assurance
-        </h1>
-        <p>
-            For every purchase you make, we will ensure there are no damages or faults and we will check and test the
-            pitch of your instrument.
-        </p>
+            <h1>
+                Quality Assurance
+            </h1>
+            <p>
+                For every purchase you make, we will ensure there are no damages or faults and we will check and test
+                the
+                pitch of your instrument.
+            </p>
+        </div>
     </div>
 
-    <div class="how-it-works">
+    <div class="how-it-works" id="how-it-works">
         <section id="how-it-works">
             <iframe id="video" height="315"
                 src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
@@ -74,44 +103,74 @@
     </div>
 
     <div class="product_list">
-        <div class="product_item">
-            <div class="product_item-title">
-                <h2>
-                    TENOR TROMBONE
-                </h2>
-            </div>
-            <div class="product_item-price">
-                $600
-            </div>
-            <ul>
-                <li>
-                    Lorem ipsum.
-                </li>
-                <li>
-                    Lorem ipsum.
-                </li>
-                <li>
-                    Lorem ipsum dolor.
-                </li>
-                <li>
-                    Lorem ipsum.
-                </li>
-            </ul>
-            <label>
-                <input type="submit" value="Select"></input>
-            </label>
+        <!-- <div class="product_item"> -->
+        <div class="product_item-title" id="pricing">
+            <h2>
+                TENOR TROMBONE
+            </h2>
+        </div>
+        <div class="product_item-price">
+            $600
+        </div>
+        <ul>
+            <li>
+                Lorem ipsum.
+            </li>
+            <li>
+                Lorem ipsum.
+            </li>
+            <li>
+                Lorem ipsum dolor.
+            </li>
+            <li>
+                Lorem ipsum.
+            </li>
+        </ul>
+        <label>
+            <input type="submit" value="Select" class="btn"></input>
+        </label>
 
 
+        <!-- </div> -->
+        <!-- <div class="product_item"> -->
+        <div class="product_item-title">
+            <h2>
+                BASS TROMBONE
+            </h2>
         </div>
-        <div class="product_item">
-            <div class="product_item-title">
-                <h2>
-                    TENOR TROMBONE
-                </h2>
-            </div>
-            <div class="product_item-price">
-                $600
-            </div>
+        <div class="product_item-price">
+            $600
+        </div>
+        <ul>
+            <li>
+                Lorem ipsum.
+            </li>
+            <li>
+                Lorem ipsum.
+            </li>
+            <li>
+                Lorem ipsum dolor.
+            </li>
+            <li>
+                Lorem ipsum.
+            </li>
+        </ul>
+        <label>
+            <input type="submit" value="Select" class="btn"></input>
+        </label>
+        <!-- </div> -->
+        <!-- <div class="product_item"> -->
+        <div class="product_item-title">
+            <h2>
+                VALVE TROMBONE
+            </h2>
+        </div>
+        <div class="product_item-price">
+            $600
+        </div>
+        
+        <div>
+
             <ul>
                 <li>
                     Lorem ipsum.
@@ -126,37 +185,11 @@
                     Lorem ipsum.
                 </li>
             </ul>
-            <label>
-                <input type="submit" value="Select"></input>
-            </label>
         </div>
-        <div class="product_item">
-            <div class="product_item-title">
-                <h2>
-                    TENOR TROMBONE
-                </h2>
-            </div>
-            <div class="product_item-price">
-                $600
-            </div>
-            <ul>
-                <li>
-                    Lorem ipsum.
-                </li>
-                <li>
-                    Lorem ipsum.
-                </li>
-                <li>
-                    Lorem ipsum dolor.
-                </li>
-                <li>
-                    Lorem ipsum.
-                </li>
-            </ul>
-            <label>
-                <input type="submit" value="Select"></input>
-            </label>
-        </div>
+        <label>
+            <input type="submit" value="Select" class="btn"></input>
+        </label>
+        <!-- </div> -->
     </div>
 
 
